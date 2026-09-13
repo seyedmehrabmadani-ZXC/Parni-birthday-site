@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>تولدت مبارک پرنیان 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- صفحه ۱: ورود -->
+    <section id="scene-intro" class="scene active">
+        <div class="intro-content">
+            <div class="sparkles">✨</div>
+            <h1 class="intro-name">پرنیان</h1>
+            <p class="intro-subtitle">یه چیز کوچیک برات دارم...</p>
+            <button id="btn-start" class="btn-primary">شروع کن</button>
+        </div>
+    </section>
+
+    <!-- صفحه ۲: دلایل -->
+    <section id="scene-reasons" class="scene">
+        <div class="scene-container">
+            <h2 class="scene-title">تو بهترینی 💝</h2>
+            <p class="scene-subtitle">روی هر کارت کلیک کن</p>
+            
+            <div id="cards-grid" class="cards-grid"></div>
+            
+            <button id="btn-to-letter" class="btn-primary btn-disabled" disabled>
+                حالا یه نامه برات دارم ✉️
+            </button>
+        </div>
+    </section>
+
+    <!-- صفحه ۳: نامه -->
+    <section id="scene-letter" class="scene">
+        <div class="scene-container">
+            <h2 class="scene-title">نامه‌ای برای تو 💌</h2>
+            
+            <div id="envelope" class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body"></div>
+            </div>
+            
+            <div id="letter-content" class="letter-content hidden">
+                <div id="letter-text" class="letter-text"></div>
+                <button id="btn-skip-typing" class="btn-secondary">رد کردن ⏭️</button>
+                <button id="btn-to-cake" class="btn-primary hidden">بریم سراغ کیک 🎂</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- صفحه ۴: کیک -->
+    <section id="scene-cake" class="scene">
+        <div class="scene-container">
+            <h2 class="scene-title">شمع‌ها رو فوت کن! 🕯️</h2>
+            <p class="scene-subtitle">روی هر شمع کلیک کن</p>
+            
+            <div class="cake-wrapper">
+                <div id="candles" class="candles"></div>
+                <div class="cake">
+                    <div class="cake-layer"></div>
+                    <div class="cake-layer"></div>
+                    <div class="cake-plate"></div>
+                </div>
+            </div>
+            
+            <p id="candles-counter" class="candles-counter">۵ شمع باقی مونده</p>
+        </div>
+    </section>
+
+    <!-- صفحه ۵: جشن -->
+    <section id="scene-celebration" class="scene">
+        <div class="celebration-content">
+            <div class="celebration-emoji">🎉</div>
+            <h1 id="celebration-title" class="celebration-title">تولدت مبارک دختر کوچولوی من!</h1>
+            <p id="celebration-message" class="celebration-message">همه زندگیمی 💕</p>
+            <button id="btn-to-finale" class="btn-primary">ادامه ✨</button>
+        </div>
+        <div id="balloons" class="balloons"></div>
+    </section>
+
+    <!-- صفحه ۶: پایان -->
+    <section id="scene-finale" class="scene">
+        <div class="finale-content">
+            <div class="finale-emoji">🌙</div>
+            <h2 id="finale-title" class="finale-title">همه‌ش برای تو بود</h2>
+            <p id="finale-text" class="finale-text">مرسی که هستی</p>
+            <button id="btn-restart" class="btn-secondary">از اول ببین 🔄</button>
+        </div>
+    </section>
+
+    <!-- دکمه کنترل آهنگ -->
+    <button id="btn-music" class="btn-music hidden" title="قطع/وصل آهنگ">🔊</button>
+
+    <!-- کانفتی -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
